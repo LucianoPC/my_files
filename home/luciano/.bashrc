@@ -177,6 +177,9 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 source ~/.rvm/scripts/rvm
 
+export DEBMAIL="lucianopcbr@gmail.com"
+export DEBEMAIL="lucianopcbr@gmail.com"
+export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 
 alias cdtcc='mkalias_cdtcc'
 function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender; }
