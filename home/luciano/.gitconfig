@@ -1,0 +1,10 @@
+[user]
+	name = Luciano Prestes Cavalcanti
+	email = lucianopcbr@gmail.com
+[color]
+	ui = true
+[alias]
+	st = status
+	ft = fetch -p --all
+[core]
+	editor = vim
