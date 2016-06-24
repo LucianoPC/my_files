@@ -1,0 +1,28 @@
+gitbuildpackage
+===============
+
+Create git buildpackage with gem
+ - gem2deb
+ - gbp import-dsc
+
+Update upstream
+ - uscan
+ - gbp import-orig --uscan
+
+Update changelog
+ - dch
+
+
+
+quilt
+=====
+New quilt
+ - quilt new [patch_name].patch
+Load quilt
+ - quilt push [patch_name].patch
+
+ quilt add [file]
+ quilt edit [file]
+ quilt refresh
+ quilt pop
+ git commit
