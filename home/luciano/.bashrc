@@ -250,4 +250,5 @@ function mkalias_cpstat(){ tar cf - "$1" | pv | (cd "$2"; tar xf -); }
 alias gituntracked='mkalias_gituntracked'
 function mkalias_gituntracked(){ git ls-files --others --exclude-standard $@; }
 
-
+alias cdprojects='mkalias_cdprojects'
+function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
