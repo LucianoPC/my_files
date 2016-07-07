@@ -241,7 +241,6 @@ function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
 alias vimbash='mkalias_vimbash'
 function mkalias_vimbash(){ vim ~/.bashrc $@; }
 
-
 # BEGIN Ruboto setup
 source ~/.rubotorc
 # END Ruboto setup
