@@ -174,9 +174,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
-
 export DEBMAIL="lucianopcbr@gmail.com"
 export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
@@ -252,3 +249,6 @@ function mkalias_gituntracked(){ git ls-files --others --exclude-standard $@; }
 
 alias cdprojects='mkalias_cdprojects'
 function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
+
+alias vimbash='mkalias_vimbash'
+function mkalias_vimbash(){ vim ~/.bashrc $@; }
