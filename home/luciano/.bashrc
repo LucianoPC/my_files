@@ -178,6 +178,11 @@ export DEBMAIL="lucianopcbr@gmail.com"
 export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 
+# BEGIN Ruboto setup
+source ~/.rubotorc
+# END Ruboto setup
+PATH=${PATH/":/home/luciano/.rvm/bin:"/""}
+
 trap 'source /home/luciano/.bashrc' USR1
 
 alias cdtcc='mkalias_cdtcc'
@@ -240,7 +245,4 @@ function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
 
 alias vimbash='mkalias_vimbash'
 function mkalias_vimbash(){ vim ~/.bashrc $@; }
-
-# BEGIN Ruboto setup
-source ~/.rubotorc
-# END Ruboto setup
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
