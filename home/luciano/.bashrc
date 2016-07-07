@@ -244,4 +244,3 @@ function mkalias_vimbash(){ vim ~/.bashrc $@; }
 # BEGIN Ruboto setup
 source ~/.rubotorc
 # END Ruboto setup
-
