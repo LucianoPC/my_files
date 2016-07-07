@@ -219,8 +219,6 @@ function mkalias_guf(){ git --no-pager diff --name-only --diff-filter=U $@; }
 alias vimguf='mkalias_vimguf'
 function mkalias_vimguf(){ vim $(git --no-pager diff --name-only --diff-filter=U) -p; }
 
-alias cpknn='mkalias_cpknn'
-function mkalias_cpknn(){ cp -rf ~/Documents/unb/tcc/scripts/popcon_clusters/  ~/.app-recommender/; cp -rf ~/Documents/unb/tcc/knn/my_popcon  ~/.app-recommender/; }
 
 alias vimrc='mkalias_vimrc'
 function mkalias_vimrc(){ vim ~/.vimrc $@; }
