@@ -178,8 +178,6 @@ export DEBMAIL="lucianopcbr@gmail.com"
 export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 
-. ~/.rubotorc
-
 trap 'source /home/luciano/.bashrc' USR1
 
 alias cdtcc='mkalias_cdtcc'
