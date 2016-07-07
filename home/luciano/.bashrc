@@ -244,6 +244,3 @@ function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
 
 alias vimbash='mkalias_vimbash'
 function mkalias_vimbash(){ vim ~/.bashrc $@; }
-
-PATH=${PATH/":/home/luciano/.rvm/bin"/""}
-echo "PATH: $PATH"
