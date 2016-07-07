@@ -178,12 +178,18 @@ export DEBMAIL="lucianopcbr@gmail.com"
 export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 
+PATH=$PATH:$HOME/Documents/Android/sdk:$HOME/Documents/Android/sdk/tools
+export PATH
+PATH=$PATH:$HOME/Documents/Android/sdk/platform-tools
+export PATH
+
+trap 'source /home/luciano/.bashrc' USR1
+
 alias cdtcc='mkalias_cdtcc'
 function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender; }
 
 alias cdmkalias='mkalias_cdmkalias'
 function mkalias_cdmkalias(){ cd ~/Documents/projects/mkalias; }
-
 
 alias go='mkalias_go'
 function mkalias_go(){ gnome-open $@; }
@@ -191,18 +197,11 @@ function mkalias_go(){ gnome-open $@; }
 alias fkd='mkalias_fkd'
 function mkalias_fkd(){ flake8 $(git ls-files -m) $@; }
 
-
-trap 'source /home/luciano/.bashrc' USR1
-
-
 alias gdf='mkalias_gdf'
 function mkalias_gdf(){ git diff $@; }
 
-
-
 alias pst='mkalias_pst'
 function mkalias_pst(){ python setup.py test $@; }
-
 
 alias uc='mkalias_uc'
 function mkalias_uc(){ cd ~/Documents/unb/tcc/AppRecommender/bin; ./user_classification.py; cd -; }
@@ -212,7 +211,6 @@ function mkalias_ap(){ cd ~/Documents/unb/tcc/AppRecommender/bin; ./apprec.py $@
 
 alias psn='mkalias_psn'
 function mkalias_psn(){ python setup.py nosetests --tests $@; }
-
 
 alias gmf='mkalias_gmf'
 function mkalias_gmf(){ git ls-files -m $@; }
@@ -226,10 +224,8 @@ function mkalias_guf(){ git --no-pager diff --name-only --diff-filter=U $@; }
 alias vimguf='mkalias_vimguf'
 function mkalias_vimguf(){ vim $(git --no-pager diff --name-only --diff-filter=U) -p; }
 
-
 alias cpknn='mkalias_cpknn'
 function mkalias_cpknn(){ cp -rf ~/Documents/unb/tcc/scripts/popcon_clusters/  ~/.app-recommender/; cp -rf ~/Documents/unb/tcc/knn/my_popcon  ~/.app-recommender/; }
-
 
 alias vimrc='mkalias_vimrc'
 function mkalias_vimrc(){ vim ~/.vimrc $@; }
@@ -242,7 +238,6 @@ function mkalias_ec(){ git status; ls; }
 
 alias cpstat='mkalias_cpstat'
 function mkalias_cpstat(){ tar cf - "$1" | pv | (cd "$2"; tar xf -); }
-
 
 alias gituntracked='mkalias_gituntracked'
 function mkalias_gituntracked(){ git ls-files --others --exclude-standard $@; }
