@@ -181,7 +181,6 @@ export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 # BEGIN Ruboto setup
 source ~/.rubotorc
 # END Ruboto setup
-PATH=${PATH/":/home/luciano/.rvm/bin:"/""}
 
 trap 'source /home/luciano/.bashrc' USR1
 
@@ -245,4 +244,6 @@ function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
 
 alias vimbash='mkalias_vimbash'
 function mkalias_vimbash(){ vim ~/.bashrc $@; }
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+PATH=${PATH/":/home/luciano/.rvm/bin"/""}
+echo "PATH: $PATH"
