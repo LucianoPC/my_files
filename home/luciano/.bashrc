@@ -240,6 +240,8 @@ function mkalias_cdprojects(){ cd ~/Documents/projects $@; }
 alias vimbash='mkalias_vimbash'
 function mkalias_vimbash(){ vim ~/.bashrc $@; }
 
+ANDROID_HOME=$HOME/android-sdk-linux
+
 # BEGIN Ruboto setup
 source ~/.rubotorc
 # END Ruboto setup
