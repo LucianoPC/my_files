@@ -178,11 +178,6 @@ export DEBMAIL="lucianopcbr@gmail.com"
 export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 
-PATH=$PATH:$HOME/Documents/Android/sdk:$HOME/Documents/Android/sdk/tools
-export PATH
-PATH=$PATH:$HOME/Documents/Android/sdk/platform-tools
-export PATH
-
 trap 'source /home/luciano/.bashrc' USR1
 
 alias cdtcc='mkalias_cdtcc'
