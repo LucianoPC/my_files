@@ -117,10 +117,6 @@ $lintian_opts = ['-i', '-I'];
 # Directory for writing build statistics to
 #$stats_dir = "$HOME/stats";
 
-
-# don't remove this, Perl needs it:
-1;
-
 # EXTERNAL_COMMANDS
 # Type: HASH:ARRAY:STRING
 # External commands to run at various stages of a build. Commands are held
@@ -158,3 +154,7 @@ $lintian_opts = ['-i', '-I'];
                         ['adt-run', '--changes', '%c', '--no-built-binaries', '--shell-fail', '---', 'schroot', 'unstable-amd64-sbuild'],
                                 ],
                                     };
+
+
+# don't remove this, Perl needs it:
+1;
