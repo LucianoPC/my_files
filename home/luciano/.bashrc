@@ -246,3 +246,6 @@ ANDROID_HOME=$HOME/android-sdk-linux
 source ~/.rubotorc
 # END Ruboto setup
 
+
+alias apprec='mkalias_apprec'
+function mkalias_apprec(){ cd ~/Documents/unb/tcc/AppRecommender/bin/; ./apprec.py $@; cd -; }
