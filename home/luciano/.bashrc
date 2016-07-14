@@ -253,5 +253,7 @@ function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender $@; }
 
 
 
-alias git='mkalias_git'
-function mkalias_git(){  $@; }
+
+
+alias t='mkalias_t'
+function mkalias_t(){ ls; ls -a; }
