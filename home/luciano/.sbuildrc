@@ -9,6 +9,10 @@ $build_source = 1;
 $distribution = 'unstable';
 $run_lintian = 1;
 $lintian_opts = ['-i', '-I'];
+$external_commands = {
+  "post-build-commands" => [ ['adt-run', '--changes', '%c', '--no-built-binaries', '--shell-fail', '---', 'schroot', 'unstable-amd64-sbuild'],
+                      ]
+  };
 
 ##
 ## DPKG-BUILDPACKAGE OPTIONS
