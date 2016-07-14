@@ -179,8 +179,6 @@ export DEBEMAIL="lucianopcbr@gmail.com"
 export DEBFULKLNAME="Luciano Prestes Cavalcanti"
 trap 'source /home/luciano/.bashrc' USR1
 
-alias cdtcc='mkalias_cdtcc'
-function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender; }
 
 alias cdmkalias='mkalias_cdmkalias'
 function mkalias_cdmkalias(){ cd ~/Documents/projects/mkalias; }
@@ -249,3 +247,6 @@ source ~/.rubotorc
 
 alias apprec='mkalias_apprec'
 function mkalias_apprec(){ cd ~/Documents/unb/tcc/AppRecommender/bin/; ./apprec.py $@; cd -; }
+
+alias cdtcc='mkalias_cdtcc'
+function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender $@; }
