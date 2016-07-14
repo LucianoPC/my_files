@@ -250,3 +250,8 @@ function mkalias_apprec(){ cd ~/Documents/unb/tcc/AppRecommender/bin/; ./apprec.
 
 alias cdtcc='mkalias_cdtcc'
 function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender $@; }
+
+
+
+alias git='mkalias_git'
+function mkalias_git(){  $@; }
