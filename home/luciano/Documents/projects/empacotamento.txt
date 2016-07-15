@@ -12,6 +12,9 @@ Update upstream
 Update changelog
  - dch
 
+Debian commit
+ - debcommit -a
+
 
 
 quilt
