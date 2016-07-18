@@ -252,14 +252,3 @@ alias cdtcc='mkalias_cdtcc'
 function mkalias_cdtcc(){ cd ~/Documents/unb/tcc/AppRecommender $@; }
 
 
-
-
-
-
-
-
-
-
-
-alias ='mkalias_'
-function mkalias_(){ ls; ls; -la; }
