@@ -226,8 +226,6 @@ function mkalias_ipt(){ ipython $@; }
 alias ec='mkalias_ec'
 function mkalias_ec(){ git status; ls; }
 
-alias cpstat='mkalias_cpstat'
-function mkalias_cpstat(){ tar cf - "$1" | pv | (cd "$2"; tar xf -); }
 
 alias gituntracked='mkalias_gituntracked'
 function mkalias_gituntracked(){ git ls-files --others --exclude-standard $@; }
